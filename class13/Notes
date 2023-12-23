@@ -1,0 +1,21 @@
+Methods in Java;
+methods/Functions/Behaviours are blocks of code.They contain statements (lines of codes)
+which are executed when a method is called.
+
+A method in Java  has return type(outputs), name and parameters/arguments.
+
+
+Why should we use methods?
+ Methods heps us reuse the code. when we need to share or reuse a piece of code within our
+ projects or with others
+ we can create our own classes define methods inside those classes and we can start reusing/sharing them.
+
+Syntax of the method;
+Return Type (output)   nameOfTheMethod (input/argument/parameter ( OPTIONAL ) ){
+
+
+}
+All the methods needs to be created inside a class.
+
+
+

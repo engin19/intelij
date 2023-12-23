@@ -1,0 +1,23 @@
+Object Oriented Program(OOPs):
+OOPs is just a style of programming. Do's amd dont's of years of experience.
+just a way of writing code that helps us write large amounts of code easily.
+ it helps us manage and change large amount of code.
+ Functional programming and procedural programming is available but we are going to focus
+ on OOPs.
+ Pillars of OOPs;
+ 1) Inheritance;
+ 2) Polymorphism:
+ 3) Abstraction;
+ 4) Encapsulation:
+
+
+Classes and Objects;
+A class is a template /design/map/idea blueprint
+from which objects are created.
+
+Create a class Person;
+create soem fields 3-5
+3-5 methods
+
+
+

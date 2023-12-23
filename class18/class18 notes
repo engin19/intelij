@@ -1,0 +1,37 @@
+Method Overriding;
+    Method overriding allows child classes to modify methods,
+    which are inherited from the parent classes.
+
+    Benefits of MethodOverriding;
+    it gives flexibility to child classes to change methods which are coming from parents class if they want to .
+
+-Static methods cant not be overridden
+ * if method is created as final no other class can override that method
+ * if the class is listed as final no child class can inherit from that class
+ * if fields are assigned final that field cant be changed  and you need to assign the value
+    otherwise you are going to get an error.
+
+
+
+  ***
+  Overload is changing in parameters but Overriding is change out of methods
+  ***
+
+
+
+  1)Create a class Car with properties like make, model, and year.
+  Implement a method calculate_rental_price based on the number of rental days.
+  Create two subclasses: LuxuryCar and EconomyCar. Override the calculate_rental_price method in LuxuryCar to include additional charges.
+  Demonstrate the functionality by creating instances of each class and calling their methods
+  2)Online Shopping Cart:
+
+  Construct a class Product with attributes like product_name, price, and quantity.
+  Create a subclass DiscountedProduct that extends Product and includes an additional discount_rate attribute.
+  Override a method in DiscountedProduct to calculate the price after applying the discount.
+  Create instances of both classes and show how prices are calculated
+  3)Library Management System:
+
+  Create a base class Book with attributes like title, author, and ISBN.
+  Develop two subclasses: EBook and PrintBook. In EBook, add a property for download_link, and in PrintBook, add a property for number_of_copies.
+  Implement a method in each subclass that displays book details.
+  Instantiate objects from these classes and demonstrate the display functionality.
