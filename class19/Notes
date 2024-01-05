@@ -1,5 +1,6 @@
 Type casting in object;
-Converting the datatype of data . There are two types of type casting upcasting and down-casting.
+Converting the datatype of data . There are two types of type casting upcasting and
+down-casting.
 
 
 PolyMorphism in Java:
@@ -7,3 +8,11 @@ PolyMorphism in Java:
 achieved through method overloading
 2) RunTime (dynamic/Late Biding)
 achieved thru overriding.
+SAme object behaves differently
+same method different objects
+when you are calling the same method  polymorphism allows us to
+write the same code to the parent class( since those classes are related,)
+we can create an array and call the same method with loop and save a lot of repetition
+
+when your classes are related and there is a inheritance you use abstract,
+if the classes are not related then you use interface.

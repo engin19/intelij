@@ -1,0 +1,15 @@
+Interface;
+interfaces are contracts.
+They are used to make sure that every programmer is on the same page
+they use abstraction for this purpose
+by default they are abstract and abstract methods don't have body.
+
+Encapsulation;
+Encapsulation  means put everything related into one class.
+Encapsulation says create a class for every entity and define methods related to that
+class instead of putting everything inside the method.
+it also says make your fields private and define GETTER and SETTER methods for those fields.
+=======================================================================
+collections Framework
+is a collection of classes and interfaces which allows us to store and manipulate waste
+large amount of data easily.

@@ -13,7 +13,7 @@ public void sleep(){
 }
 class SyntaxStudent extends Student{
     public void studyJava(){
-        System.out.println("JAVA");
+        System.out.println("Syntax students JAVA");
     }
     @Override
     public void study(){

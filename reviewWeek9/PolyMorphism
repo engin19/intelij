@@ -1,0 +1,42 @@
+PolyMorphism;
+it is a mechanism in JAVA that allows methods to behave differently
+depending upon which object are using to call them.
+there are two types of polymorphism dynamic and static.
+
+1) Dynamic Polymorphism; is achieved through method overriding.
+2) Static Polymorphism; is achieved through method overloading.
+
+
+why do we use the Polymorphism (What is the benefit of Polymorphism ;
+it allows us to avoid code repetition.
+if we have to call multiple methods from multiple classes and they are all sibling classes
+
+What do we need to apply PolyMorphism;
+1) inheritance
+2) Method overRiding
+3) TypeCasting
+4) loops
+5) Arrays
+
+Interfaces; something which is act as a common ground.
+are like contracts which makes sure that everybody is on the same page..
+they achieve this thru abstraction..
+
+  1) inside an interface by default every method is public and abstract.
+  2) there are no instance variables inside the interfaces.
+  3) you cant have a constructors inside the interface
+  4) you cant create an object of interfaces
+  5) if you want you can have static methods but they will be always final.( by Default)
+     by default every variable public static and final.
+
+
+
+
+
+
+
+
+
+
+
+

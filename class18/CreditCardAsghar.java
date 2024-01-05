@@ -17,11 +17,10 @@ public class CreditCardAsghar {
     }
     class AX extends CreditCard{
         @Override
-        public void interest() {
-            super.interest();
-        }
 
-        void calculateInterest(double amount) {
+
+
+        public void calculateInterest(double amount) {
             double interest=amount*0.09;
             System.out.println("Interest on "+amount+" is "+interest);
         }

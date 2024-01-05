@@ -17,3 +17,4 @@ public class AnimalTester {
         Animal [] animals={d1,c1,a1};
     }
 }
+

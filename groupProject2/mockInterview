@@ -1,0 +1,344 @@
+
+1) 1. What types of variables we have in Java. Define all of them and explain the
+   differences
+
+    There are 3 different variables based on their scope and usage
+         a) instance Variable: This variables are declared within a class but outside of any
+            method,constructor or block.
+            *They are initialized 0,null,false  if not explicitly initialized.
+            *They are accessible to all methods, contractors and blocks in the class.
+
+         b) Local Variable: These variables are declared within in method,contractor or block.
+            * They only exist with in the method,constructor or block.
+            * they  must be explicitly initialized before they used since they don't have a default value
+            * they are accessible only within the block of code where they are declared.
+
+         c) Static (Class) Variable:  These variables are declared with the static keyword within a class,
+            outside of any method, constructor, or block
+            * similar to instance variable but with STATIC keyword.they are initialized with default
+              values if not explicitly initialized.
+            * Static variables belong to the class itself rather than to any specific instance,
+            * there is only one copy per class and shared by all instances.
+            * They can be accessed directly via the class name or through an instance(object) of the class.
+------------------------------------------------------------------------------------------------------------------------
+     2)     What is the constructor? Use of a constructor in the class? Difference
+            between constructor and a method? Can we overload a constructor?
+
+            Constructor is a special type of method that is automatically called when an object of a class is created
+                        using "new" keyword.
+
+                 *  Main purpose of constructors  is to initialize the newly created object.
+                    Constructors have the "SAME NAME AS THE CLASS" they belong to and don't have a
+                    return type, not even void.
+
+                  *Difference between constructor and method:
+
+                   *    Name: Constructors have the same name as the class, while methods have their distinct names.
+                   *    Return Type: Constructors don't have a return type, whereas methods specify their return type
+                   (or void if they don't return anything).
+                   *    Explicit Invocation: Constructors are automatically invoked when an object is created,
+                   while methods are explicitly called by name.
+
+                   *Overloading Constructors: Yes, just like methods, constructors can be overloaded.
+                   This means a class can have multiple constructors with different parameter lists.
+                   THere are 3 ways we can overload Constructors;
+                   1) number of parameters
+                   2) Datatype of parameters
+                   3) Sequence of dataType
+
+
+                   public class MyClass {
+                       private int value;
+
+                       // Default constructor
+                       public MyClass() {
+                           value = 0;
+                       }
+
+                       // Constructor with one parameter
+                       public MyClass(int val) {
+                           value = val;
+                       }
+
+                       // Constructor with two parameters
+                       public MyClass(int val1, int val2) {
+                           value = val1 + val2;
+                       }
+                   }
+-----------------------------------------------------------------------------------------------------------------------
+3) What is the usage of super and this? Super vs this? Super() vs super.? this()
+   vs this.
+
+        super:
+
+        It is used to refer to the immediate parent class object.
+        super is primarily used to call the superclass constructor or access the superclass's methods and variables.
+        super() is used to explicitly call the superclass constructor. When used in a constructor,
+        it must be the first statement.
+
+        this:
+
+        It refers to the current instance variables of the class.
+        this is primarily used to differentiate between class members (variables, methods)
+        and parameters or local variables with the same names.
+        this() is used to call one constructor from another constructor in the same class.
+        It must be the first statement in the constructor and is used for constructor chaining.
+
+        Difference between super and this:
+
+        super vs. this:
+
+       * super refers to the superclass or parent class. this refers to the current instance variables of the class.
+       * super is used to access methods, variables, and constructors of the parent class.
+        this is used to access methods, variables, and constructors of the current class.
+       * super is often used to resolve naming conflicts between the superclass and subclass members.
+        this is used to differentiate between instance variables and local variables/parameters with the same name.
+
+
+        super() vs. super.:
+
+        *   super() is used to explicitly call a superclass constructor from a subclass constructor.
+            It must be the first statement in a constructor.
+            super. is used to access methods or variables of the superclass from within the subclass.
+
+        this() vs. this.:
+
+        *    this() is used to call one constructor from another constructor within the same class.
+             It must be the first statement in the constructor.
+             this. is used to access methods or variables of the current class.
+   -------------------------------------------------------------------------------------------------------------------
+   4)  What is Inheritance? Benefits? Types? Explain each type
+
+      * One of the fundamental of OOPs concept in JAVA,
+        where a new class, known as a subclass or derived class, is created by inheriting the properties and behaviors
+        (methods and fields) of an existing class, called the superclass or base class.
+
+      * Benefits of Inheritance:
+        *   Code Reusability: Inheritance allows reusing code from existing classes,
+            reducing redundancy and promoting a modular approach to programming.
+
+        *   Extensibility: Subclasses can add new functionality or modify existing behavior without altering the superclass,
+            enhancing the flexibility of the codebase.
+
+        *   Hierarchy and Organization: It allows the creation of a hierarchical relationship among classes,
+            enabling categorization and structuring of related classes.
+
+            Types of Inheritance:
+
+           1) Single Inheritance:
+                A subclass inherits from only one superclass.
+                Java supports single inheritance for classes, meaning a class can extend only one other class.
+
+            2)  Multiple Inheritance:
+                A subclass inherits from multiple superclasses.
+                Java does not directly support multiple inheritance for classes
+                (i.e., a class cannot directly extend more than one class).
+                This is because of the complexity that ariseswhen dealing with conflicts
+                in method and attribute names from multiple parents.
+                Not directly supported in Java for classes to avoid ambiguity and complexity.
+                However, Java supports multiple inheritance for interfaces, allowing a class to implement multiple interfaces.
+
+            3)  Multilevel Inheritance:
+
+                A chain of inheritance where a subclass is derived from a superclass,
+                 and another subclass is derived from this subclass.
+                For instance: Class A is the superclass, Class B extends Class A, and Class C extends Class B.
+                Class C indirectly inherits from Class A.
+
+            4)  Hierarchical Inheritance:
+
+                Multiple classes extend a single superclass.
+                 For instance: Class A is the superclass, Class B and Class C both extend Class A.
+
+            5)  Hybrid/Combined Inheritance:
+
+            A combination of multiple types of inheritance.
+            For instance, a combination of single and multiple inheritances within a class hierarchy.
+   --------------------------------------------------------------------------------------------------------------------------
+
+5)  What is Overloading? How can it be achieved? What can we overload and
+   what we cannot?
+
+   Overloading in Java refers to the ability to have multiple methods in the same class with the same name but different parameters.
+    It allows different methods to have the same name but perform different tasks based on the parameters passed or the types of arguments.
+
+
+Overloading in Java refers to the ability to have multiple methods in the same class with the same name but different parameters. It allows different methods to have the same name but perform different tasks based on the parameters passed or the types of arguments.
+
+Achieving Overloading:
+To achieve method overloading:
+
+     *Method Name:
+ Define multiple methods in the same class with the same name.
+     *Different Parameters:
+Ensure that each method has a different parameter list (number or types of parameters)
+or a different order of parameters.
+
+What Can Be Overloaded:
+
+    *   Method Name: Methods with the same name can be overloaded.
+    *   Parameter List: The number, types, and order of parameters should differ among overloaded methods..
+
+What Cannot Be Overloaded:
+
+    *   Return Type: Overloading based solely on return type is not allowed in Java.
+        Two methods with the same name and parameter list but different return types cannot be defined as overloaded methods.
+        Java considers the return type alone insufficient to differentiate between methods.
+--------------------------------------------------------------------------------------------------------------------------
+
+6) What is Overriding? How can it be achieved? What can we override and
+   what we cannot?
+
+        *   Overriding in Java occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.
+            It allows a subclass to provide its own implementation of a method that is already present in its superclass,
+            thus changing the behavior of that method for the subclass.
+
+        Achieving Overriding:
+        To achieve method overriding:
+
+       * Inheritance:
+         Create a subclass that extends a superclass..
+
+       * Method Signature:
+       Redefine a method in the subclass with the same method signature (name, parameters, and return type) as in the superclass.
+
+     What Can Be Overridden:
+
+        *   Inherited Methods:
+        Methods inherited from the superclass can be overridden in the subclass.
+
+        *   Method Signature:
+        The method in the subclass must have the same signature (name, parameters, and return type) as the method in the superclass.
+
+       What Cannot Be Overridden:
+
+       *    Final Methods:
+        Methods declared as final in the superclass cannot be overridden in any subclass.
+        The final keyword prevents method overriding.
+
+       *    Static Methods:
+       Methods declared as static belong to the class rather than instances,
+       so they can't be overridden but can be re-declared in a subclass with the same name.
+ ----------------------------------------------------------------------------------------------------------------------
+ 7. What is Polymorphism? Types of Polymorphism? Differences between
+ Overloading & Overriding?
+
+    Polymorphism is a core concept in object-oriented programming that allows objects to be treated as instances of their parent class
+    , enabling them to take on multiple forms. It allows a single interface to be used for different data types or objects.
+
+    Types of Polymorphism:
+
+    *Compile-Time Polymorphism (Static Binding / Early Binding):
+    Achieved using method overloading.
+    Resolved during compile-time.
+    Different methods with the same name but different parameters or signatures.
+
+    *Run-Time Polymorphism (Dynamic Binding / Late Binding):
+    Achieved using method overriding.
+    Resolved during runtime based on the actual object type.
+    Same method name and signature in both superclass and subclass.
+
+
+    Differences between Overloading & Overriding:
+    Overloading:
+
+    *   Definition: Having multiple methods with the same name but different parameters within the same class.
+    *   Implementation: Resolved at compile-time based on the method signature.
+    *   Inheritance: Not related to inheritance; occurs within the same class.
+    *   Purpose: Provides multiple ways to perform the same operation with different parameter lists.
+
+    Overriding:
+
+    *   Definition: Providing a new implementation for a method in the subclass that is already defined in the superclass.
+    *   Implementation: Resolved at runtime based on the actual object type (dynamic dispatch).
+    *   Inheritance: Occurs in a subclass that extends a superclass.
+    *   Purpose: Allows a subclass to provide its own implementation of a method inherited from its superclass.
+
+    Key Differences:
+    *   Point of Occurrence:
+            Overloading occurs within the same class, while overriding occurs in a subclass that extends a superclass.
+    *   Resolution Time:
+            Overloading is resolved at compile-time, while overriding is resolved at runtime.
+    *   Inheritance Relationship:
+            Overloading is not directly related to inheritance, whereas overriding relies on inheritance between classes.
+    *   Method Signature:
+            Overloaded methods have different signatures (parameters), while overridden methods have the same signature as the superclass method.
+
+
+    Both concepts contribute to the flexibility and extensibility of object-oriented programming
+     by allowing methods to behave differently in different contexts (compile-time or runtime) and based on the specific objects involved.
+--------------------------------------------------------------------------------------------------------------------------------------
+8) What is the final keyword,usage and purpose?
+
+In Java, the final keyword is used:
+to define constants, immutable variables, methods that cannot be overridden, and classes that cannot be inherited.
+
+*   Final Variables:
+
+    *   When applied to a variable, it means the variable's value cannot be changed once it has been assigned.
+        The variable becomes a constant and must be initialized either when declared or within the constructor.
+
+*   Final Methods:
+
+        When applied to a method, it means the method cannot be overridden by subclasses.
+        Ensures that the behavior defined in the method remains constant throughout the inheritance hierarchy.
+
+*   Final Classes:
+
+        When applied to a class, it means the class cannot be subclassed or inherited.
+        Prevents other classes from extending it, ensuring that its behavior remains unchanged.
+
+*   Purpose of final:
+    *   Immutability: Declaring variables as final ensures their values cannot be altered after initialization,
+    making them immutable and enhancing code reliability.
+    *   Preventing Modification: Final methods prevent subclasses from changing the behavior of the method defined in the superclass.
+    *   Security and Optimization: Final classes prevent classes from being extended,
+    ensuring that their implementation remains intact and preventing potential security loopholes.
+
+    Additionally, they can aid in performance optimization as certain optimizations can be applied by the compiler due
+    to the immutability or unchangeable nature of final entities.
+------------------------------------------------------------------------------------------------------------------------
+9)  What is Abstraction? How can we achieve an Abstraction in Java? What is
+  Interface? What is Abstract Class? Interface vs Abstract Class?
+
+  Abstraction in Java is a fundamental principle that focuses on hiding the implementation details and exposing
+  only the necessary features or behaviors of an object. It allows the creation of a simplified view of the object,
+   emphasizing what an object does rather than how it does it.
+
+  *  Abstraction through Classes and Methods:
+   In Java, abstraction can be achieved by using abstract classes and interfaces.
+
+  1) Interface:
+
+   An interface in Java is a blueprint of a class that contains only abstract methods and constants
+   (variables that are implicitly public, static, and final).
+   Interfaces provide a contract that classes must follow by implementing all the methods declared in the interface.
+
+  2) Abstract Class:
+
+     An abstract class is a class that cannot be instantiated and may contain both abstract and concrete methods.
+     Abstract methods in an abstract class do not have a body and must be implemented by the subclasses.
+
+   Interface vs. Abstract Class:
+   *    Interface   *
+
+   Only contains abstract methods and constants.
+   Supports multiple inheritance (a class can implement multiple interfaces).
+   Cannot contain method implementations.
+   Provides a contract for classes to follow.
+
+   *    Abstract Class  *
+
+   Can contain abstract and concrete methods.
+   Doesn't support multiple inheritance (a class can extend only one abstract class).
+   Can have method implementations.
+   Allows defining common behavior among subclasses.
+
+   Key Points:
+   *    Purpose: Abstraction helps in creating a level of detail that is necessary for a specific purpose, hiding the unnecessary
+   complexity and providing a simplified view of objects.
+   *    Implementation: Abstract classes and interfaces serve as tools to achieve abstraction in Java by defining a structure
+    that concrete classes must follow.
+   *    Flexibility: Interfaces offer greater flexibility by allowing multiple inheritance, while abstract classes can provide
+   partial implementations to be inherited by subclasses.
+

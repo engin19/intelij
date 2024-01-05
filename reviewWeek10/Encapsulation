@@ -1,0 +1,24 @@
+Encapsulation:
+    for every entity that you are going to have in java create a separate class
+     and use it when you need it .
+     it helps us write more secure and manageable code.
+
+
+     Collections Framework;  is simply a collection of classes which helps us manage and manipulate large
+     amount of data.
+
+
+     why do we need Collection Framework?
+     1) we cant use arrays as they are fixed in size.
+     2) Arrays don't have built-in methods
+
+     Both of those problems solved with collection framework;
+
+
+     ArrayList:
+
+
+
+
+     framework lots of classes put together that has lots of methods in it to build something easily.
+

@@ -2,29 +2,33 @@ package class18;
 
 public class CreditCard {
 
-    public void interest() {
-        System.out.println("10%");
+     void calculateInterest(double amount) {
+        double interest=amount*0.05;
+        System.out.println("Interest on "+amount+" is "+interest);
     }
 
 }
     class AmEx extends CreditCard {
 
-        public void interest() {
-            System.out.println("10%");
+        public void calculateInterest(double amount) {
+            double interest=amount*0.09;
+            System.out.println("Interest on "+amount+" is "+interest);
         }
     }
     class Visa extends CreditCard{
-            public void interest(){
-        System.out.println("8%");
+    @Override
+             void calculateInterest(double amount){
+                 double interest=amount*0.07;
+        System.out.println("Interest on "+amount+" is "+interest);
         }
 
         }
     class CreditCardTester{
         public static void main(String[] args) {
             AmEx amex=new AmEx();
-            amex.interest();
+            amex.calculateInterest(100);
             Visa1 v=new Visa1();
-            v.interest();
+            v.calculateInterest(100);
         }
 
     }

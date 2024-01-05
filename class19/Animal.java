@@ -14,7 +14,7 @@ public class Animal {
 
     }
 
-    public void PrintInfo() {
+    public void printInfo() {
         System.out.println(name + " " + color + " " + age + " " + weight);
     }
 }
@@ -30,6 +30,9 @@ class Dog extends Animal {
 
 }
 class Cat extends Animal {
+    public static void main(String[] args) {
+
+    }
 
     public Cat(String name, String color, int age, double weight) {
         super(name, color, age, weight);

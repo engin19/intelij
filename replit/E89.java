@@ -1,6 +1,6 @@
 package replit;
 
-class Main {
+/*class Main {
     String breed;
     String name;
     String color;
@@ -37,3 +37,4 @@ class Main {
 
     }
 }
+*/
