@@ -10,40 +10,57 @@ public class E12 {
 
 }
  abstract class Marks{
+
+
+   abstract double getPercentage();
+}
+class A extends Marks {
+    public A(double mark1, double mark2, double mark3) {
+        this.mark1 = mark1;
+        this.mark2 = mark2;
+        this.mark3 = mark3;
+    }
+
     double mark1;
     double mark2;
     double mark3;
-   static double average;
-    double getPercentage(double mark1,double mark2,double mark3){
-        return average;
-    }
-}
-class A extends Marks {
-    double mark4;
+    static double average;
+
 
 
 
 
 
     @Override
-    double getPercentage(double mark1, double mark2, double mark3 ) {
-        return super.getPercentage(mark1, mark2, mark3);
-
-    }
-    double getPercentage(double mark1, double mark2, double mark3,double mark4) {
-        return getPercentage(0.0, 0.0, 0.0,0.0);
+    double getPercentage() {
+        return average=((mark1+mark2+mark3)/3);
     }
 }class B extends Marks {
-    @Override
-    double getPercentage(double mark1, double mark2, double mark3) {
-        return super.getPercentage(mark1, mark2, mark3);
+    double mark1;
+    double mark2;
+    double mark3;
+    static double average;
+    double mark4;
 
+    public B(double mark1, double mark2, double mark3, double mark4) {
+        this.mark1 = mark1;
+        this.mark2 = mark2;
+        this.mark3 = mark3;
+        this.mark4 = mark4;
+    }
+
+    @Override
+    double getPercentage() {
+        return average=((mark1+mark2+mark3+mark4)/4);
     }
 }
-class MarkTester{
+class MarkTester {
     public static void main(String[] args) {
-        Marks a= new A();
-        System.out.println(a.getPercentage(95,65,88));
+        Marks a = new A(95,85,65);
+        Marks b=new B(85,65,95,99);
+        System.out.println(a.getPercentage());
+        System.out.println(b.getPercentage());
+
 
     }
 }
