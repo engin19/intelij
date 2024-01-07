@@ -13,15 +13,17 @@ public class E10 {
         names.add("Adriana");
         names.add("Engin");
         for (int i = 0; i <names.size() ; i++) {
-            for (int j =i+1; j <names.size(); j++) {
+            for (int j = names.size()-1; j >0; j--) {
                 if (names.get(i).equals(names.get(j))){
                     names.remove(i);
+                    break;
 
-            }System.out.println(names);
+
+            }
+                System.out.println(names);
+
+
+            }
         }
-
-        }
-
-
     }
 }

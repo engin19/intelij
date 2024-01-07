@@ -21,10 +21,10 @@ class A extends Marks {
         this.mark3 = mark3;
     }
 
-    double mark1;
-    double mark2;
-    double mark3;
-    static double average;
+   private  double mark1;
+   private double mark2;
+   private double mark3;
+   private static double average;
 
 
 
