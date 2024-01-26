@@ -1,0 +1,20 @@
+Why should we learn how to read write data in an Excel file?
+     When we perform Data driven testing we need to write/read data in Excel files.
+
+What do we need to know for reading the data from any file?
+    *Location
+    *We must know how to bring the data from file into the script(JavaCode).
+    *We must have a class to manipulate the file.
+
+How to get the location of the file in Inteliji?
+    we can right click on the copy path reference.
+
+There are 3 types of errors
+1) Compile time Error:
+2) Runtime error(exceptions error);
+3) Logical error: solved by debug  or checking the output.
+
+
+
+
+

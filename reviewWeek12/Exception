@@ -1,0 +1,15 @@
+Exception:
+    it is abnormal behaviour or unwanted behaviour which disturbs the normal flow of execution.
+    The program stops working and we have to restart it.
+
+ 1)   Runtime Syntax compile error;
+ 2)
+
+
+
+How can we solve these Exceptions
+WE can read the error from bottom locator and using the exception that we are getting we can look at the
+class to read more about it.
+
+
+Checked Exceptions:Are the important exceptions. you cant tun your code if you dont take care of these exceptions.

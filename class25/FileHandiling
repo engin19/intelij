@@ -1,0 +1,12 @@
+FileHandling:
+itis the process of reading anf writing data to a file.
+if we want to read /write data to a file we need following.
+
+1) Location of the file on the computer.
+2) Navigate to the location
+3) A special software knows how to read/write to that tile must be installed on the computer.
+
+Steps to create a new folder in your project;
+-Right click on your project
+-click on new and Directory
+-give name and hit enter.

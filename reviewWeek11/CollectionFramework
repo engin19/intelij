@@ -1,0 +1,94 @@
+Collections Framework:
+    Collection Framework is simply a collection of classes and interfaces which help us
+    store the data easily. The classes in this framework are dynamic and have a lot of built-in
+    methods that we can use to manipulate the data.
+
+    There are 3 main chatogories we have.
+
+   Main interfaces;
+   1) List
+   2) Set
+   3) Map
+
+
+   1) List:
+   * List can store duplicate data.
+   * They remember the order in which you insert the data
+
+   There are two main classes which implement the list interface.
+   ArrayList and LinkedList
+
+   nserting->LinkedList, accessing->ArrayList is easier.
+   ArrayList internally uses an array which makes the accessing the elements fast but
+   adding or removing an element is supper slow in arraylist.
+   On the other hand  LinkedList  uses a doublelly LinkedList internally, so inserting or removing elements
+   from Linked list is really easy but accessing the elements is really slow.
+
+   Sets:
+    The sets don't allow duplicate elements.
+    There are 3 major types of sets
+    1) HashSet: HashSet are really fast but they don't remember the order which we insert the elements.
+
+    2) LinkedHashSet:
+                Pro: They remember the insertation order.
+                Cons: They are little slower as compared the Hashset.
+
+    3) TreeSet:
+            Pro:They always keep the data sorted.
+            Cons: insertion is very slow
+
+   Maps:
+   Maps allows us to store the data in pairs. (key,value)
+   There are so many classes  but we are going to discuss only 3 main types of maps.
+
+   1) Hashmap:HashMap are really fast but they don't remember the order which we insert the elements.
+   2) LinkedHasMap:
+                Pro: They remember the insertation order.
+                Cons: They are little slower as compared the Hashset.
+   3) TreeMap:
+                 Pro:They always keep the data sorted.
+                 Cons: insertion is very slow
+
+Map and Sets dont supports index based loops but we can use enhanced loop.
+
+Files Handling :  DEaling with files Reading/Writing/Copying/Moving files using programing.
+________________
+1)  Location of the File
+2)  Navigate to the location/bring the file to the RAM.
+3)  Software/class that knows how to read/write  data to that file.
+
+Configuration Files:
+    configuration files are sued to store sensitive configuration related information.
+    Like URLS username,password ect.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

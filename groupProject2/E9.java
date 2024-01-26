@@ -9,6 +9,6 @@ public class E9 {
                 System.out.println("First non-repeating character is: " + str.charAt(i));
                 break;
             }
-        };
+        }
     }
     }

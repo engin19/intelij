@@ -1,0 +1,22 @@
+LinkedList:
+
+
+Set:
+Sets are very similar to lis bur they do not allow duplicates and they ignore duplicates
+ and they print randomly.
+
+ HashSet;
+ upside: very fast
+ downside: they do not store the data in order.
+
+ LinkedHAshSet:
+ upside: It remembers the order.
+ downside: it is slower than HashSet
+
+ TreeSet: Duplicates are going to be ignored again just like in any sets
+ Upside: it keeps the data sorted always.
+ downside: inserting new element is very slow.
+
+
+
+

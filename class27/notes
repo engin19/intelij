@@ -1,0 +1,8 @@
+Logical errors are the worse. since it is effecting your end user
+and it takes a lot longer to take care of it.
+
+Exception:
+An unwanted behaviour which disturbs the normal flow of your program.
+
+Checked Exceptions:
+Non-Checked Exceptions:

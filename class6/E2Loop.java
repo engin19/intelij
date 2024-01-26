@@ -5,5 +5,7 @@ public class E2Loop {
         int i=10;
         ++i;
         System.out.println(i);
+        i--;
+        System.out.println(i);
     }
 }
